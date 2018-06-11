@@ -10,7 +10,8 @@ import { CompetencesComponent } from './pages/competences/competences.component'
 import { DiplomesComponent } from './pages/diplomes/diplomes.component'
 import { DiversComponent } from './pages/divers/divers.component'
 
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { AsideComponent } from './aside/aside.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module'
     ExperiencesComponent,
     CompetencesComponent,
     DiplomesComponent,
-    DiversComponent
+    DiversComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,

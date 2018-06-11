@@ -1,15 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    TITLE
+    Titre
   </h1>
 </div>
 <nav>
-  <ul>
-    <li><a routerLink="experiences">experiences</a></li>
-    <li><a routerLink="competences">competences</a></li>
-    <li><a routerLink="diplomes">diplomes</a></li>
-    <li><a routerLink="divers">divers</a></li>
+  <ul class="nav d-flex justify-content-around col-md-10 col-xs-12 mx-auto">
+    <li class="nav-item"><a class="nav-link" routerLink="experiences" routerLinkActive="active">experiences</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="competences" routerLinkActive="active">competences</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="diplomes" routerLinkActive="active">diplomes</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="divers" routerLinkActive="active">divers</a></li>
   </ul>
 </nav>
-  <router-outlet></router-outlet>
+<div class="container d-flex flex-md-row flex-xs-col col-md-10 col-xs-12">
+  <aside class="order-1 col-md-3 col-xs-12 p-2 d-flex flex-sm-row flex-md-col ml-md-3 mt-xs-3 align-self-start" style="background-color: #ffaaaa;">
+    <app-aside></app-aside>
+  </aside>
+  <main class="order-0 col-md-9 col-xs-12 align-self-start"  style="background-color: #aaaaff;">
+    <router-outlet></router-outlet>
+  </main>
+
+</div>
+

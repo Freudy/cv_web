@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+// make Bootstrap active link more visible
+.active {
+  font-weight: bolder;
+}
+
+// the class .mt-xs-3 is not working natively on bootstrap :/
+@media all and (max-width: 767px){
+  .mt-xs-3 {
+    margin-top: 1rem;
+  }
+}
