@@ -1,17 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
 nav {
-  :not(.active){
-    color:black;
+  :not(.active) {
+    color: black;
   }
   .active * {
     color: white;
-    .fa {
-    }
   }
 }
+
+hr {
+  border-color: white;
+}
+
 // the class .mt-xs-3 is not working natively on bootstrap :/
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
   .mt-xs-3 {
     margin-top: 1rem;
   }
+}
+
+h3 {
+  font-size: 1.20rem;
+}
+
+.xp {
+  border-left: 3px solid lightblue;
+  padding-left: 1.3rem;
+  .enterprise {
+    display: block;
+    padding: 5px;
+    //    border-bottom: 3px solid white;
+  }
+}
+
+caption {
+  caption-side: top;
+}
+
+.competences {
+  .legend {
+    float:right;
+    font-size: .9rem;
+  }
+  i {
+    color: gray;
+  }
+  u {
+    float:left;
+  }
+  h3 {
+    clear: both;
+  }
+  th {
+    width:125px;
+
+  }
+}
+
+
+.competences-list {
+  float: left;
+  display: block;
+  margin-left: 75px;
 }
