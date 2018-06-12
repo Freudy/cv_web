@@ -1,24 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
+  <h1 class="m-4">
     Titre
   </h1>
 </div>
-<nav>
-  <ul class="nav d-flex justify-content-around col-md-10 col-xs-12 mx-auto">
-    <li class="nav-item"><a class="nav-link" routerLink="experiences" routerLinkActive="active">experiences</a></li>
-    <li class="nav-item"><a class="nav-link" routerLink="competences" routerLinkActive="active">competences</a></li>
-    <li class="nav-item"><a class="nav-link" routerLink="diplomes" routerLinkActive="active">diplomes</a></li>
-    <li class="nav-item"><a class="nav-link" routerLink="divers" routerLinkActive="active">divers</a></li>
-  </ul>
-</nav>
-<div class="container d-flex flex-md-row flex-xs-col col-md-10 col-xs-12">
-  <aside class="order-1 col-md-3 col-xs-12 p-2 d-flex flex-sm-row flex-md-col ml-md-3 mt-xs-3 align-self-start" style="background-color: #ffaaaa;">
-    <app-aside></app-aside>
-  </aside>
-  <main class="order-0 col-md-9 col-xs-12 align-self-start"  style="background-color: #aaaaff;">
-    <router-outlet></router-outlet>
+<div class="content col-md-10 col-xs-12 mx-auto p-0">
+  <nav class="">
+    <ul class="nav nav-pills nav-fill mx-auto mb-4 p-0">
+      <li class="nav-item"><a class="nav-link" routerLink="experiences" routerLinkActive="active"><i class="fa fa-lg fa-building"></i> <span class="d-none d-sm-block">Experiences</span></a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="competences" routerLinkActive="active"><i class="fa fa-lg fa-cogs"></i> <span class="d-none d-sm-block">Competences</span></a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="diplomes" routerLinkActive="active"><i class="fa fa-lg fa-university"></i> <span class="d-none d-sm-block">Diplomes</span></a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="divers" routerLinkActive="active"><i class="fa fa-lg fa-beer"></i> <span class="d-none d-sm-block">Divers</span></a></li>
+    </ul>
+  </nav>
+  <main class="container d-flex flex-md-row flex-xs-col mb-4 p-2 p-sm-0">
+    <aside class="order-1 bg-light col-md-4 col-xs-12 d-flex p-0 flex-sm-row flex-md-col ml-md-3 mt-xs-3 align-self-start rounded">
+      <app-aside></app-aside>
+    </aside>
+    <article class="order-0 bg-dark text-light col-md-8 col-xs-12 align-self-start p-4 rounded">
+      <router-outlet></router-outlet>
+    </article>
   </main>
-
 </div>
-

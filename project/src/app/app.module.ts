@@ -11,7 +11,7 @@ import { DiplomesComponent } from './pages/diplomes/diplomes.component'
 import { DiversComponent } from './pages/divers/divers.component'
 
 import { AppRoutingModule } from './app-routing.module';
-import { AsideComponent } from './aside/aside.component'
+import { AsideComponent } from './aside/aside.component';
 
 @NgModule({
   declarations: [
