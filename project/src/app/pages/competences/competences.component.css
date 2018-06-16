@@ -1,0 +1,12 @@
+
+
+.legend {
+  float:right;
+  font-size: .9rem;
+}
+i {
+  color: gray;
+}
+th {
+  width:125px;
+}

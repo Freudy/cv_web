@@ -1,14 +1,22 @@
-.container {
-  main {
-
-  }
-  aside {
-
-  }
-}
+$c-active:#007bff;
 
 @media all and (min-width: 200px) {
   .container {
     flex-direction: column;
   }
+}
+
+nav {
+  font-variant: small-caps;
+  .active:hover {
+    background-color: darken($c-active, 10%);
+  }
+}
+
+th {
+  font-variant: small-caps;
+}
+td, th {
+  padding: 20px;
+  vertical-align: middle;
 }

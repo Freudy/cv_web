@@ -1,0 +1,51 @@
+$c-linkedin:#007bb5;
+$c-viadeo:darkorange;
+$c-github:#24292e;
+$c-mail:#a4c639;
+$c-phone:#dd4b39;
+$darken-percent:10%;
+
+
+#downloadPdf {
+  font-variant: small-caps;
+}
+
+address i:hover {
+  transition: color .3s;
+}
+
+.linkedin {
+  color:$c-linkedin;
+  &:hover {
+    color:darken($c-linkedin,$darken-percent);
+  }
+}
+
+.viadeo {
+  color:$c-viadeo;
+  &:hover {
+    color:darken($c-viadeo,$darken-percent);
+  }
+}
+
+.mail {
+  color:$c-mail;
+  &:hover {
+    color:darken($c-mail,$darken-percent);
+  }
+}
+
+.phone {
+  color:$c-phone;
+  &:hover {
+    color:darken($c-phone,$darken-percent);
+  }
+}
+
+.github {
+  color:$c-github;
+  &:hover {
+    color:darken($c-github,$darken-percent);
+  }
+}
+
