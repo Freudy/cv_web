@@ -1,10 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 nav {
-  :not(.active) {
+  a {
     color: black;
-  }
-  .active * {
-    color: white;
   }
 }
 
@@ -15,6 +12,16 @@ nav {
   }
 }
 
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-variant: small-caps;
+}
+
 h3 {
   font-size: 1.20rem;
 }
@@ -22,4 +29,13 @@ h3 {
 
 caption {
   caption-side: top;
+}
+
+
+th {
+  font-variant: small-caps;
+}
+td, th {
+  padding: 20px;
+  vertical-align: middle;
 }

@@ -12,6 +12,12 @@ import { DiversComponent } from './pages/divers/divers.component'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AsideComponent } from './aside/aside.component';
+import { CatAmaniaComponent } from './pages/entreprises/cat-amania/cat-amania.component';
+import { SiiComponent } from './pages/entreprises/sii/sii.component';
+import { FirstWebComponent } from './pages/entreprises/first-web/first-web.component';
+import { AvensysComponent } from './pages/entreprises/avensys/avensys.component';
+import { AccueilComponent } from './pages/accueil/accueil.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { AsideComponent } from './aside/aside.component';
     CompetencesComponent,
     DiplomesComponent,
     DiversComponent,
-    AsideComponent
+    AsideComponent,
+    CatAmaniaComponent,
+    SiiComponent,
+    FirstWebComponent,
+    AvensysComponent,
+    AccueilComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

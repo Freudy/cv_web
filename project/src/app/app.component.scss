@@ -6,6 +6,11 @@ $c-active:#007bff;
   }
 }
 
+header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 nav {
   font-variant: small-caps;
   .active:hover {
@@ -13,10 +18,15 @@ nav {
   }
 }
 
-th {
-  font-variant: small-caps;
+#nav-contact {
+  color: white;
 }
-td, th {
-  padding: 20px;
-  vertical-align: middle;
+
+
+.nav-item-icon-only .nav-link {
+  height: 100%;
+}
+
+footer {
+  font-size: .9rem;
 }
